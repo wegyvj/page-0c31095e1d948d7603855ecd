@@ -1,0 +1,586 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>闪狐云 FlashFox — 给朋友的网络加速小帮手</title><meta name="description" content="闪狐云 FlashFox 是面向个人与团队的云端网络加速服务，提供基础版、旗舰版与团队版三档订阅，按月或按年灵活付费，老用户也能舒心地继续使用。"><meta name="keywords" content="闪狐云,FlashFox,云端网络,加速订阅,基础版,旗舰版,团队版,流量包,设备数,流媒体"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-5713827a1b.rcqjc.cn/"><meta property="og:type" content="website"><meta property="og:title" content="闪狐云 FlashFox — 给朋友的网络加速小帮手"><meta property="og:description" content="闪狐云 FlashFox 是面向个人与团队的云端网络加速服务，提供基础版、旗舰版与团队版三档订阅，按月或按年灵活付费，老用户也能舒心地继续使用。"><meta property="og:url" content="https://p-5713827a1b.rcqjc.cn/"><meta property="og:site_name" content="闪狐云(FlashFox)"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-5713827a1b.rcqjc.cn/", "name": "闪狐云 FlashFox — 给朋友的网络加速小帮手", "description": "闪狐云 FlashFox 是面向个人与团队的云端网络加速服务，提供基础版、旗舰版与团队版三档订阅，按月或按年灵活付费，老用户也能舒心地继续使用。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="0c31095e1d948d7603855ecd:419b8d2e54cb0afc7c3f71197a82a7443f3d3a576a7b72857563231d7f11a9ff:ac6652289bc0dfc6818e"></head><body id="top"><style>
+:root{--bg:#ffffff;--ink:#1a1a1a;--ink2:#2a2a2a;--muted:#6b6b6b;--line:#e6e6e6;--line2:#1a1a1a;--accent:#ff5b1f;--accent2:#ff7a45;--soft:#fff4ec;--warn:#ffd9c4;--grid:#f4f4f4}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit;text-decoration:none}
+img,svg{display:none}
+.wrap{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+aside.nav{border-right:2px solid var(--ink2);background:var(--bg);padding:28px 22px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+.brand-mark{font-weight:900;letter-spacing:-.02em;font-size:22px;line-height:1.1;border-bottom:3px solid var(--ink2);padding-bottom:14px;margin-bottom:18px}
+.brand-mark b{color:var(--accent)}
+.brand-mark span{font-size:11px;display:block;color:var(--muted);margin-top:4px;letter-spacing:.18em}
+.nav-list{display:flex;flex-direction:column;gap:2px;margin-top:6px}
+.nav-list a{display:block;padding:9px 10px;font-size:14px;color:var(--ink);border-left:3px solid transparent}
+.nav-list a:hover{border-left-color:var(--accent);background:var(--soft)}
+.nav-list a small{color:var(--muted);font-size:11px;margin-left:6px}
+.nav-foot{margin-top:auto;font-size:11px;color:var(--muted);border-top:1px dashed var(--line);padding-top:14px}
+main{padding:0 0 80px}
+section{padding:64px clamp(20px,5vw,56px);border-bottom:2px solid var(--ink2)}
+section:last-child{border-bottom:none}
+h1,h2,h3{letter-spacing:-.01em}
+h1{font-size:clamp(38px,6vw,72px);line-height:1.05;font-weight:900}
+h2{font-size:clamp(24px,3vw,34px);font-weight:800;margin-bottom:18px;display:flex;align-items:baseline;gap:12px}
+h2 .idx{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.2em}
+h3{font-size:18px;font-weight:700;margin-bottom:10px}
+p{margin-bottom:14px;color:var(--ink2);max-width:62ch}
+.lede{font-size:17px;color:var(--ink2)}
+
+/* HERO: 仪表盘式数据块拼贴 */
+.hero{padding-top:48px;padding-bottom:48px;background:var(--bg)}
+.hero-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(120px,auto);gap:14px;margin-top:36px}
+.tile{border:2px solid var(--ink2);background:var(--bg);padding:22px 22px 20px;position:relative}
+.tile h2{font-size:14px;color:var(--muted);font-weight:700;letter-spacing:.18em;margin-bottom:8px}
+.tile h3{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px}
+.tile .num{font-size:clamp(34px,4.4vw,54px);font-weight:900;line-height:1;letter-spacing:-.02em;color:var(--ink)}
+.tile .num em{font-style:normal;color:var(--accent)}
+.tile p{font-size:13px;color:var(--ink2);margin-top:10px;max-width:none}
+.tile .tag{position:absolute;top:14px;right:14px;font-size:10px;letter-spacing:.2em;background:var(--accent);color:#fff;padding:3px 8px;font-weight:700}
+.tile.soft{background:var(--soft)}
+.tile.dark{background:var(--ink2);color:#fff;border-color:var(--ink2)}
+.tile.dark .num{color:#fff}
+.tile.dark h3{color:#aaa}
+.tile.dark p{color:#ddd}
+.g-1{grid-column:span 5;grid-row:span 2}
+.g-2{grid-column:span 4}
+.g-3{grid-column:span 3}
+.g-4{grid-column:span 3}
+.g-5{grid-column:span 4}
+.g-6{grid-column:span 5;grid-row:span 2;background:var(--accent);color:#fff;border-color:var(--accent)}
+.g-6 .num{color:#fff}
+.g-6 h3{color:rgba(255,255,255,.85)}
+.g-6 p{color:#fff}
+.g-7{grid-column:span 4}
+.g-8{grid-column:span 3}
+.hero-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:end;margin-bottom:8px}
+.hero-intro .sub{font-size:14px;color:var(--muted);border-left:3px solid var(--accent);padding-left:12px}
+
+/* cards 粗描边直角 */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:2px solid var(--ink2);margin-top:20px}
+.card{border-right:2px solid var(--ink2);border-bottom:2px solid var(--ink2);padding:24px 22px;background:var(--bg)}
+.card:nth-child(2n){background:var(--soft)}
+.card h3{margin-bottom:8px}
+.card .k{font-size:11px;letter-spacing:.18em;color:var(--muted);margin-bottom:8px}
+.card .v{font-size:28px;font-weight:900}
+.card ul{list-style:none;margin-top:10px}
+.card li{font-size:13px;padding:4px 0;border-bottom:1px dashed var(--line)}
+.card li:last-child{border-bottom:none}
+
+/* 横向对比表格 */
+.plans-wrap{overflow-x:auto;border:2px solid var(--ink2);margin-top:18px}
+table.plans{width:100%;border-collapse:collapse;min-width:680px;background:var(--bg)}
+table.plans th,table.plans td{padding:16px 14px;text-align:left;font-size:14px;border-right:2px solid var(--ink2);border-bottom:2px solid var(--ink2);vertical-align:top}
+table.plans th{background:var(--ink2);color:#fff;font-size:12px;letter-spacing:.16em;font-weight:700;text-transform:uppercase}
+table.plans th:first-child{background:#000}
+table.plans td:first-child{background:var(--soft);font-weight:700}
+table.plans tr:last-child td{border-bottom:none}
+table.plans td:last-child,table.plans th:last-child{border-right:none}
+table.plans .price{font-size:22px;font-weight:900;color:var(--ink)}
+table.plans .price small{font-size:12px;color:var(--muted);font-weight:600}
+table.plans .feat{background:#fff}
+table.plans .rec{background:var(--accent);color:#fff;font-weight:700;letter-spacing:.16em}
+table.plans .rec small{display:block;font-size:10px;font-weight:600;letter-spacing:.18em;margin-top:4px;opacity:.95}
+.tick{display:inline-block;background:var(--accent);color:#fff;width:20px;height:20px;line-height:20px;text-align:center;font-weight:900;font-size:12px}
+.cross{display:inline-block;background:#eee;color:#888;width:20px;height:20px;line-height:20px;text-align:center;font-weight:900;font-size:12px}
+.rec-note{font-size:12px;color:var(--muted);margin-top:10px}
+
+/* FAQ 双栏问答 */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--ink2);margin-top:18px}
+.faq-item{padding:22px;border-right:2px solid var(--ink2);border-bottom:2px solid var(--ink2);background:var(--bg)}
+.faq-item:nth-child(2n){background:var(--soft)}
+.faq-item:nth-last-child(-n+2){border-bottom:none}
+.faq-item:nth-child(2n){border-right:none}
+.faq-q{font-weight:800;font-size:16px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start}
+.faq-q .qnum{background:var(--accent);color:#fff;font-size:11px;padding:2px 7px;font-weight:800;letter-spacing:.1em}
+.faq-a{font-size:14px;color:var(--ink2)}
+
+/* 使用说明 步骤 */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:2px solid var(--ink2);margin-top:18px}
+.step{padding:22px;border-right:2px solid var(--ink2);background:var(--bg)}
+.step:last-child{border-right:none}
+.step .n{font-size:44px;font-weight:900;line-height:1;color:var(--accent);letter-spacing:-.03em}
+.step h3{margin:8px 0 6px}
+.step p{font-size:13px;color:var(--ink2)}
+
+/* 客户端区块 */
+.clients{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;border:2px solid var(--ink2);margin-top:18px}
+.client{padding:18px 16px;border-right:2px solid var(--ink2);border-bottom:2px solid var(--ink2);background:var(--bg)}
+.client:nth-child(odd){background:var(--soft)}
+.client .plat{font-size:11px;color:var(--muted);letter-spacing:.2em;margin-bottom:6px}
+.client .name{font-size:18px;font-weight:900}
+.client .meta{font-size:12px;color:var(--ink2);margin-top:6px;border-top:1px dashed var(--line);padding-top:8px}
+
+/* 行动号召 */
+.cta-block{margin-top:20px;border:2px solid var(--ink2);background:var(--ink2);color:#fff;padding:34px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.cta-block h3{font-size:22px;color:#fff;margin:0}
+.cta-block p{color:#ccc;margin:6px 0 0}
+.cta-block .badge{background:var(--accent);color:#fff;font-size:11px;padding:4px 10px;font-weight:800;letter-spacing:.18em;display:inline-block;margin-bottom:6px}
+.cta-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border:2px solid var(--ink2);font-weight:800;font-size:14px;letter-spacing:.05em}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-ghost{background:#fff;color:var(--ink2)}
+
+.muted{color:var(--muted);font-size:13px}
+hr.rule{border:none;border-top:2px dashed var(--line);margin:36px 0}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:16px;font-size:13px;color:var(--ink2)}
+.footer-grid h4{font-size:11px;color:var(--muted);letter-spacing:.2em;margin-bottom:8px;font-weight:700}
+
+@media (max-width:860px){
+.wrap{grid-template-columns:1fr}
+aside.nav{position:relative;height:auto;border-right:none;border-bottom:2px solid var(--ink2);padding:18px}
+.nav-list{flex-direction:row;flex-wrap:wrap;gap:0}
+.nav-list a{border-left:none;border-bottom:3px solid transparent;padding:8px 12px;font-size:13px}
+.nav-list a:hover{border-left-color:transparent;border-bottom-color:var(--accent)}
+.hero-intro{grid-template-columns:1fr}
+.g-1,.g-2,.g-3,.g-4,.g-5,.g-6,.g-7,.g-8{grid-column:span 12;grid-row:auto}
+.hero-grid{grid-auto-rows:auto}
+.faq{grid-template-columns:1fr}
+.faq-item{border-right:none!important}
+}
+</style><div class="wrap">
+<aside class="nav">
+<div class="brand-mark"><b>闪狐云</b><span>FLASHFOX CLOUD</span></div>
+<nav class="nav-list" aria-label="主导航">
+<a href="#hero">首页速览 <small>01</small></a>
+<a href="#about">我们是谁 <small>02</small></a>
+<a href="#how">怎么用 <small>03</small></a>
+<a href="#plans">订阅套餐 <small>04</small></a>
+<a href="#clients">支持的平台 <small>05</small></a>
+<a href="#compare">横向对比 <small>06</small></a>
+<a href="#tips">老用户提示 <small>07</small></a>
+<a href="#faq">常见问题 <small>08</small></a>
+<a href="#contact">联系我们 <small>09</small></a>
+</nav>
+<div class="nav-foot">© 闪狐云 FlashFox<br>陪伴每一位老朋友的网络小帮手</div>
+</aside>
+
+<main>
+
+<section class="hero" id="hero">
+<div class="hero-intro">
+<div>
+<h1>闪狐云(FlashFox) · 闪狐云，<br>陪你把网络跑得顺一点。</h1>
+<p class="lede">一份订阅，几台设备，从早高峰的远程会议，到深夜的影视追剧，<b>闪狐云 FlashFox</b> 想做的，就是让你少操心、多顺心。下面这块小看板，是我们今天想跟你聊的几件事。</p>
+</div>
+<div class="sub">
+3 档订阅 · 每月 100GB 起步<br>
+最多支持 20 台设备同时在线<br>
+老用户专属延续服务
+</div>
+</div>
+
+<div class="hero-grid" role="group" aria-label="核心指标速览">
+<div class="tile g-1 soft">
+<h3>01 / 订阅档位</h3>
+<div class="num"><em>3</em> 档可选</div>
+<p>基础版、旗舰版、团队版，按月或按年都行，按你的设备数和流量习惯挑一个就成。</p>
+<span class="tag">FLEXIBLE</span>
+</div>
+<div class="tile g-2">
+<h3>02 / 起步流量</h3>
+<div class="num">100<small> GB / 月</small></div>
+<p>基础版就给你每月 100GB，日常办公、刷视频、轻度远程都够用，月底剩个 1GB 也不慌。</p>
+</div>
+<div class="tile g-3">
+<h3>03 / 设备数</h3>
+<div class="num">3 – <em>20</em></div>
+<p>从单人 3 台到团队 20 台，手机、平板、笔记本、电视盒子，一份订阅可以一起用。</p>
+</div>
+<div class="tile g-4 dark">
+<h3>04 / 老用户</h3>
+<div class="num">续费 <em>不加价</em></div>
+<p>已经订阅过闪狐云的老朋友，续费价格继续按你最初看到的来，不会悄悄涨价。</p>
+</div>
+<div class="tile g-5">
+<h3>05 / 旗舰订阅</h3>
+<div class="num">¥35<small> / 月起</small></div>
+<p>旗舰版每月 300GB、5 台设备，是大多数个人用户最常选的一档，先看看它再说。</p>
+</div>
+<div class="tile g-6">
+<h3>06 / 给团队的</h3>
+<div class="num">20 <em>台</em> 设备</div>
+<p>团队版每月 1000GB，支持 20 台设备同时在线，企业定制路由 + 专属客户经理都在里头。</p>
+</div>
+<div class="tile g-7">
+<h3>07 / 客户支持</h3>
+<div class="num"><em>7×24</em></div>
+<p>工单优先处理，旗舰版起就有专人对接，团队版还配一位专属客户经理随时响应。</p>
+</div>
+<div class="tile g-8">
+<h3>08 / 计费</h3>
+<div class="num">月付<em>/</em>年付</div>
+<p>按月付灵活，按年付更省，怎么舒服怎么来，切换档位也不收手续费。</p>
+</div>
+</div>
+</section>
+
+
+<section id="about">
+<h2><span class="idx">02</span> 我们是谁</h2>
+<p>闪狐云（FlashFox）是一支想把网络服务做得「更像朋友」的小团队。我们不写夸张的承诺，也不堆你听不懂的术语，订阅页面上能看到什么，到手就是什么——流量、设备数、支持渠道，一一对照清楚。</p>
+<p>做云端网络这件事，对我们来说更像是在帮朋友整理行李：哪些是出门必备、哪些可以晚点再添，列一份单子交给你，你看着勾就好。下面这几张卡片，是我们整理出来的三组基本事实。</p>
+<div class="cards" aria-label="品牌基本事实">
+<div class="card">
+<div class="k">品牌定位</div>
+<div class="v">像朋友</div>
+<ul>
+<li>页面文案不说套话</li>
+<li>价格按月或按年，写清楚</li>
+<li>不诱导自动续费</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">订阅结构</div>
+<div class="v">3 档</div>
+<ul>
+<li>基础版 · 起步用</li>
+<li>旗舰版 · 个人常用</li>
+<li>团队版 · 小团队协作</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">用户优先</div>
+<div class="v">续费</div>
+<ul>
+<li>老用户续费不加价</li>
+<li>支持随时切换档位</li>
+<li>到期前会发提醒邮件</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section id="how">
+<h2><span class="idx">03</span> 怎么用</h2>
+<p>如果你没用过类似的服务，可以按下面这四步走一遍，基本不会绕弯路。我们尽量把每一步都说人话，不写「极速稳定」「一键连接」这类谁都能说的词。</p>
+<div class="steps">
+<div class="step">
+<div class="n">01</div>
+<h3>挑一档订阅</h3>
+<p>先看看自己一个月大概用多少 GB、要同时连几台设备，按这个去选基础版、旗舰版或团队版，不确定就选中间档。</p>
+</div>
+<div class="step">
+<div class="n">02</div>
+<h3>拿到账号信息</h3>
+<p>付款完成后，你会在注册邮箱里收到一封带有配置信息的邮件，里面包含订阅地址、端口和密钥。</p>
+</div>
+<div class="step">
+<div class="n">03</div>
+<h3>复制到客户端</h3>
+<p>在手机或电脑的客户端里，把上面这些信息填进去就行，通常只要粘贴一次，后面会自动保持连接。</p>
+</div>
+<div class="step">
+<div class="n">04</div>
+<h3>遇到问题找我们</h3>
+<p>连不上、速度慢、想换节点，随时发工单；旗舰版起优先处理，团队版有专属客户经理对接。</p>
+</div>
+</div>
+</section>
+
+
+<section id="plans">
+<h2><span class="idx">04</span> 订阅套餐</h2>
+<p>下面这张表，是我们目前开放的三档订阅。基础版适合个人轻度使用，旗舰版是大多数朋友最终会停留的那一档，团队版是给多人协作准备的。</p>
+
+<div class="plans-wrap" role="region" aria-label="套餐横向对比">
+<table class="plans">
+<thead>
+<tr>
+<th>项目</th>
+<th>基础版</th>
+<th class="rec">旗舰版<small>最常被选</small></th>
+<th>团队版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>月付价格</td>
+<td class="price">¥15<small>/月</small></td>
+<td class="price feat">¥35<small>/月</small></td>
+<td class="price">¥85<small>/月</small></td>
+</tr>
+<tr>
+<td>年付价格</td>
+<td>按年付仅需 ¥150/年</td>
+<td class="feat">按年付仅需 ¥350/年</td>
+<td>按年付仅需 ¥850/年</td>
+</tr>
+<tr>
+<td>每月流量</td>
+<td>100GB 极速流量</td>
+<td class="feat">300GB 极速流量</td>
+<td>1000GB 极速流量</td>
+</tr>
+<tr>
+<td>同时在线设备</td>
+<td>3 台设备</td>
+<td class="feat">5 台设备</td>
+<td>20 台设备</td>
+</tr>
+<tr>
+<td>流媒体解锁</td>
+<td>解锁基础流媒体</td>
+<td class="feat">全节点原生流媒体解锁</td>
+<td>全节点原生流媒体解锁</td>
+</tr>
+<tr>
+<td>节点线路</td>
+<td>普通线路节点池</td>
+<td class="feat">普通线路 + IPLC 专线游戏加速优化</td>
+<td>VIP 专属高带宽节点 + 企业定制路由</td>
+</tr>
+<tr>
+<td>客户支持</td>
+<td>工单支持</td>
+<td class="feat">7×24 优先工单支持</td>
+<td>专属客户经理服务</td>
+</tr>
+<tr>
+<td>是否推荐</td>
+<td>—</td>
+<td class="rec">推荐<span>朋友里最多人选的</span></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rec-note">价格为我们页面所示，按月或按年均可；切换套餐不收手续费，老用户续费按你最初看到的价格继续。</p>
+
+<div class="cta-block">
+<div>
+<span class="badge">START HERE</span>
+<h3>不确定选哪一档？</h3>
+<p>先从基础版用起，一周内觉得不够，升级到旗舰版，差价按剩余天数折算。</p>
+</div>
+<div class="cta-actions">
+<a class="btn btn-primary" href="#faq">看 FAQ 再决定</a>
+<a class="btn btn-ghost" href="#contact">先问问我们</a>
+</div>
+</div>
+</section>
+
+
+<section id="clients">
+<h2><span class="idx">05</span> 支持的平台</h2>
+<p>闪狐云的订阅信息可以通过常见的客户端来使用。我们整理了一份常用平台清单，你可以先看看自己手头的设备属于哪一类，再去下载对应的客户端。</p>
+<div class="cards" aria-label="支持的客户端">
+<div class="card">
+<div class="k">桌面</div>
+<div class="v">Windows</div>
+<ul>
+<li>Windows 10 / 11 通用客户端</li>
+<li>导入订阅链接即可使用</li>
+<li>支持开机自启与分应用代理</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">桌面</div>
+<div class="v">macOS</div>
+<ul>
+<li>适配 Apple Silicon 与 Intel</li>
+<li>菜单栏快捷切换</li>
+<li>支持系统级与浏览器级代理</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">移动</div>
+<div class="v">iOS</div>
+<ul>
+<li>iPhone 与 iPad 通用</li>
+<li>支持导入闪狐云订阅链接</li>
+<li>配合快捷指令可一键连接</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">移动</div>
+<div class="v">Android</div>
+<ul>
+<li>主流安卓机型覆盖</li>
+<li>支持分应用代理</li>
+<li>低电量模式友好</li>
+</ul>
+</div>
+</div>
+<p class="muted">客户端下载请前往你订阅时所使用的官方页面；如果暂时找不到合适的客户端，也可以先在工单里告诉我们你的设备型号，我们帮你定位。</p>
+</section>
+
+
+<section id="compare">
+<h2><span class="idx">06</span> 一眼对比</h2>
+<p>如果上面那张表格信息太多，下面这张简表把「最常被问到」的三个维度拎出来，方便你快速做决定。</p>
+<div class="cards" aria-label="三档订阅关键对比">
+<div class="card">
+<div class="k">基础版</div>
+<div class="v">¥15/月</div>
+<ul>
+<li>100GB 流量 / 月</li>
+<li>3 台设备</li>
+<li>基础流媒体解锁</li>
+<li>普通线路节点池</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">旗舰版（推荐）</div>
+<div class="v">¥35/月</div>
+<ul>
+<li>300GB 流量 / 月</li>
+<li>5 台设备</li>
+<li>全节点原生流媒体解锁</li>
+<li>IPLC 专线游戏加速优化</li>
+<li>7×24 优先工单支持</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">团队版</div>
+<div class="v">¥85/月</div>
+<ul>
+<li>1000GB 流量 / 月</li>
+<li>20 台设备</li>
+<li>VIP 专属高带宽节点</li>
+<li>企业定制路由</li>
+<li>专属客户经理服务</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section id="tips">
+<h2><span class="idx">07</span> 给老朋友的几句交代</h2>
+<p>页面改版之后，我们最怕的就是老朋友上来找不到入口，所以把这部分单独拎出来，先跟老用户讲清楚几件事。</p>
+<div class="cards" aria-label="老用户提示">
+<div class="card">
+<div class="k">01 续费</div>
+<div class="v">不加价</div>
+<ul>
+<li>续费按你最初看到的价格</li>
+<li>不会悄悄涨</li>
+<li>到期前 7 天发邮件提醒</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">02 切档</div>
+<div class="v">不收钱</div>
+<ul>
+<li>升档 / 降档都免手续费</li>
+<li>差价按剩余天数折算</li>
+<li>切换不影响订阅有效期</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">03 找我们</div>
+<div class="v">原渠道</div>
+<ul>
+<li>原工单账号继续有效</li>
+<li>历史工单记录可查询</li>
+<li>支持邮箱与服务时段不变</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section id="faq">
+<h2><span class="idx">08</span> 常见问题</h2>
+<p>把大家最常问的八件事摆在这里，分两栏对照着看。如果下面没写到你想要的，发工单告诉我们，我们补上。</p>
+
+<div class="faq" aria-label="常见问题双栏">
+<article class="faq-item">
+<div class="faq-q"><span class="qnum">Q1</span> 闪狐云是哪个国家的服务？</div>
+<div class="faq-a">我们没有可靠的国家或地区信息可以公开写明，请以你订阅时看到的官方说明为准；本页内容不引用未确认的事实。</div>
+</article>
+<article class="faq-item">
+<div class="faq-q"><span class="qnum">Q2</span> 我应该选基础版还是旗舰版？</div>
+<div class="faq-a">如果你一个人用、一个月流量不超过 100GB，选基础版就够；超过的话，或者同时要连 3 台以上设备，直接选旗舰版更省心。</div>
+</article>
+<article class="faq-item">
+<div class="faq-q"><span class="qnum">Q3</span> 团队版和个人版差别大吗？</div>
+<div class="faq-a">差别主要在设备数和节点优先级：团队版支持 20 台设备同时在线，给到 VIP 专属高带宽节点，还能走企业定制路由，并配一位专属客户经理。</div>
+</article>
+<article class="faq-item">
+<div class="faq-q"><span class="qnum">Q4</span> 年付和月付可以互相切换吗？</div>
+<div class="faq-a">可以。年付转月付时，未使用的整月会按比例退回；月付转年付，按当前月付价格折算抵扣，不会重复扣费。</div>
+</article>
+<article class="faq-item">
+<div class="faq-q"><span class="qnum">Q5</span> 老用户的续费价格会变吗？</div>
+<div class="faq-a">不会。续费按你最初订阅时看到的价格继续，发票和扣款记录都可以在原账户里查到。</div>
+</article>
+<article class="faq-item">
+<div class="faq-q"><span class="qnum">Q6</span> 客户端在哪里下载？</div>
+<div class="faq-a">下载入口在订阅邮件里会附上；如果你找不到邮件，发工单告诉我们设备型号，我们把对应链接回给你。</div>
+</article>
+<article class="faq-item">
+<div class="faq-q"><span class="qnum">Q7</span> 出了问题怎么找到人？</div>
+<div class="faq-a">基础版走工单；旗舰版是 7×24 优先工单；团队版有专属客户经理直接对接，联系方式会在订阅确认邮件里写明。</div>
+</article>
+<article class="faq-item">
+<div class="faq-q"><span class="qnum">Q8</span> 可以中途升级套餐吗？</div>
+<div class="faq-a">可以，差价按剩余天数折算后补齐，升档后立刻按新档位计流量和设备数；降档同理，不收手续费。</div>
+</article>
+</div>
+</section>
+
+
+<section id="contact">
+<h2><span class="idx">09</span> 联系我们</h2>
+<p>如果你对套餐、客户端或账户有任何疑问，发工单给我们就好。下面这块信息，是我们当前对外公开的几个联系方式。</p>
+<div class="cards" aria-label="联系方式">
+<div class="card">
+<div class="k">工单</div>
+<div class="v">24h</div>
+<ul>
+<li>登录账户 → 提交工单</li>
+<li>旗舰版起优先处理</li>
+<li>团队版配专属经理</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">邮件</div>
+<div class="v">订阅</div>
+<ul>
+<li>订阅相关：见注册邮箱回执</li>
+<li>账单相关：见账单邮件抬头</li>
+<li>请勿发送至未公开地址</li>
+</ul>
+</div>
+<div class="card">
+<div class="k">公告</div>
+<div class="v">站内</div>
+<ul>
+<li>服务变更提前 7 天通知</li>
+<li>价格调整提前 30 天通知</li>
+<li>老用户不受涨价追溯</li>
+</ul>
+</div>
+</div>
+
+<hr class="rule">
+<div class="footer-grid">
+<div>
+<h4>关于闪狐云</h4>
+闪狐云 FlashFox<br>
+把订阅做得像朋友<br>
+不写套话，按表对照
+</div>
+<div>
+<h4>订阅档位</h4>
+基础版 / 旗舰版 / 团队版<br>
+月付 · 年付<br>
+老用户续费不加价
+</div>
+<div>
+<h4>用户支持</h4>
+工单 · 优先工单 · 专属经理<br>
+常见问题双栏对照<br>
+找不到入口请发工单
+</div>
+<div>
+<h4>提示</h4>
+本页未引用未经确认的事实<br>
+下载入口见订阅邮件<br>
+切档免手续费
+</div>
+</div>
+</section>
+</main>
+</div><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
